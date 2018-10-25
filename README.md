@@ -33,5 +33,13 @@ whois('emrecanoztas', 'whois.crsnic.net');
 Bir diğer metot ise; alan adı ve birden fazla uzantı için sorgulama işlemini gerçekleştirir.
 
 ```
-search($domain, array($address...));
+search($name, $extensions[...]));
+```
+Burada;
++ $name: Alan adını temsil eder (uzantısız). Örneğin; emrecanoztas gibi.
++ $extension: Alan adı uzantı listesini temsil eder. Örneğin; .com, .net, .org gibi.
+
+Dolayısıyla yazacağımız kodlar aşağıdaki gibi olmalıdır.
+```
+search('emrecanoztas', array('com', 'net', 'org'));
 ```
