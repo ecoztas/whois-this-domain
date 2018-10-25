@@ -12,7 +12,7 @@ Bir üçüncü dosya;
 
 alan adı uzantıları ve bu uzantıları sağlayan servislerin adreslerini, betik içerisinde kullanılan diğer sabit değişkenleri saklar.
 
-Socket ve cURL ile işlem yapmak için 2 farklı metot bulunur ve her iki betik için de metot isimleri aynıdır.
+`Socket` ve `cURL` ile işlem yapmak için 2 farklı metot bulunur ve her iki betik için de metot isimleri aynıdır.
 
 Alan adı ve uzantısı ile birlikte sorgulama yapmak için;
 
@@ -21,8 +21,8 @@ whois($domain, $address);
 ```
 
 metodu kullanılır. Burada;
-+ $domain: Alan adı ve uzantısını temsil eder. Örneğin; emrecanoztas.com gibi.
-+ $address: Alan adı uzantı servisini temsil eder. Örneğin; .com için whois.crsnic.net gibi.
++ `$domain`: Alan adı ve uzantısını temsil eder. Örneğin; `emrecanoztas.com` gibi.
++ `$address`: Alan adı uzantı servisini temsil eder. Örneğin; `.com` için `whois.crsnic.net` gibi.
 
 Dolayısıyla kodlarımız aşağıdaki gibi olmalıdır.
 
@@ -36,10 +36,15 @@ Bir diğer metot ise; alan adı ve birden fazla uzantı için sorgulama işlemin
 search($name, $extensions[...]));
 ```
 Burada;
-+ $name: Alan adını temsil eder (uzantısız). Örneğin; emrecanoztas gibi.
-+ $extension: Alan adı uzantı listesini temsil eder. Örneğin; .com, .net, .org gibi.
++ `$name`: Alan adını temsil eder (uzantısız). Örneğin; `emrecanoztas` gibi.
++ `$extension`: Alan adı uzantı listesini temsil eder. Örneğin; `.com`, `.net`, `.org` gibi.
 
 Dolayısıyla yazacağımız kodlar aşağıdaki gibi olmalıdır.
 ```
 search('emrecanoztas', array('com', 'net', 'org'));
 ```
+
+**NOT:** Her iki metottan dönen değerler `array` tipindedir.
+
+##### TO-DO LIST
++ 115 olan alan adı sayısı arttırılacaktır.
