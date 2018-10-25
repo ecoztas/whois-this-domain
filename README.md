@@ -13,3 +13,20 @@ Bir üçüncü dosya;
 alan adı uzantıları ve bu uzantıları sağlayan servislerin adreslerini, betik içerisinde kullanılan diğer sabit değişkenleri saklar.
 
 Socket ve cURL ile işlem yapmak için 2 farklı metot bulunur ve her iki betik için de metot isimleri aynıdır.
+
+Alan adı ve uzantısı ile birlikte sorgulama yapmak için;
+
+```
+whois($domain, $address);
+```
+
+Metodu kullanılır. Burada;
++ $domain: Alan adı ve uzantısını temsil eder. Örneğin; emrecanoztas.com gibi.
++ $address: Alan adı uzantı servisini temsil eder. Örneğin; .com için whois.crsnic.net gibi.
+
+Dolayısıyla kodlarımız aşağıdaki gibi olacaktır.
+
+```
+whois('emrecanoztas', 'whois.crsnic.net');
+```
+Şeklinde olmalıdır.
