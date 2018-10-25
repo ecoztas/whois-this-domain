@@ -46,5 +46,5 @@ search('emrecanoztas', array('com', 'net', 'org'));
 
 **NOT:** Her iki metottan dönen değerler `array` tipindedir.
 
-##### TO-DO LIST
-+ 115 olan alan adı sayısı arttırılacaktır.
+### TO-DO LIST
+- [ ] 115 olan alan adı sayısı arttırılacaktır.
