@@ -1,6 +1,7 @@
 # whois-this-domain
 
 Herhangi bir Domain'i (Alan Adı) sorgulama işlemi için geliştirilmiş bir PHP betiğidir. 
+
 Alan adı sorgulama konusunu daha önce blogumda anlatmıştım. Bu yazıma ulaşmak için [buradaki](http://emrecanoztas.com/php-ile-domain-sorgulama/) bağlantıyı kullanabilirsiniz.
 
 whois-this-domain, Socket veya cURL ile sorgulama yapmak için 2 farklı dosya barındırır. Bunlar;
