@@ -20,13 +20,18 @@ Alan adı ve uzantısı ile birlikte sorgulama yapmak için;
 whois($domain, $address);
 ```
 
-Metodu kullanılır. Burada;
+metodu kullanılır. Burada;
 + $domain: Alan adı ve uzantısını temsil eder. Örneğin; emrecanoztas.com gibi.
 + $address: Alan adı uzantı servisini temsil eder. Örneğin; .com için whois.crsnic.net gibi.
 
-Dolayısıyla kodlarımız aşağıdaki gibi olacaktır.
+Dolayısıyla kodlarımız aşağıdaki gibi olmalıdır.
 
 ```
 whois('emrecanoztas', 'whois.crsnic.net');
 ```
-Şeklinde olmalıdır.
+
+Bir diğer metot ise; alan adı ve birden fazla uzantı için sorgulama işlemini gerçekleştirir.
+
+```
+search($domain, array($address...));
+```
