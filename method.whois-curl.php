@@ -31,6 +31,14 @@ if (!function_exists('search')) {
 }
 
 if (!function_exists('whois')) {
+    /**
+     * Getting information about domain.
+     * @param  string $domain
+     * @param  string $address 
+     * @return array
+     *
+     * @example  whois('emrecanoztas.com', 'whois.crsnic.net')
+     */
     function whois(string $domain, string $address): array
     {
         $curl = null;
